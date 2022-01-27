@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgb(113,188,245);
+    background: rgb(90,163,218);
     min-height: 200vh;
 }
 
@@ -15,6 +15,8 @@ body {
 .navbar{
     position: fixed;
     background-image: url(/images/navbar.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
     left: 0;
     width: 100%;
     display: flex;
@@ -44,17 +46,17 @@ body {
     align-items: center;
     list-style: none;
     text-align: center;
+    min-width: 10px
 }
 
 .navbar_item {
-
     height: 50px;
 }
 
 .navbar_links {
     font-weight: 700;
     display: inline-block;
-    text-shadow: 2px 1px 2px #39200d;
+    text-shadow: 2px 3px 3px #39200d;
     color:#fff;
     justify-content: center;
     text-decoration: none;
@@ -64,18 +66,71 @@ body {
 
 }
 
-.navbar_links:hover{
-    background-color: rgba(57,30,8, 0.5);
-    background-size: 10px 30px;
-    border-radius: 20px;
-    transition: background-color 0.1s ease-in;
+.fa-discord {
+    padding: 5px;
 }
 
-#hero-img {
-        object-fit: cover;
-        position: absolute;
-        z-index: 0;
-        width: 100%;
-        transition: all 0.5s ease;
+.navbar_links:hover{
+    background: url(images/hover-navbar.png) no-repeat center/ cover;
+}
 
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background: url(images/hero-background.png) no-repeat center/ cover;
+}
+
+.hero-rock {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: url(images/hero-rock.png) no-repeat center/ cover;
+}
+
+.hero_container {
+    position: relative;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px;
+}
+
+.hero_content {
+    text-align: center;
+    position: static;
+    transition: all 0.5s ease;
+    height: auto;
+}
+
+.hero_content h1 {
+    color: #78461f;
+    font-weight: 900;
+    text-shadow: 2px 2px 1px #171102;
+    font-size: 75px;
+    transition: all 0.5s ease;
+}
+
+.hero_content h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 20px 50px;
+    transition: all 0.5s ease;
+}
+
+.hero_content p {
+    padding: 10px 10px;
+    background-color: #39200d;
+    background-size: 50%;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #90e0ef;
 }
