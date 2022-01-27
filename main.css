@@ -31,8 +31,7 @@ body {
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
-    top: 2.25vh;
-    height: 185px;
+    height: 160px;
     width: 50%;
     margin: 0 auto;
     padding: 0 10px;
@@ -67,6 +66,7 @@ body {
 
 .navbar_links:hover{
     background-color: rgba(57,30,8, 0.5);
+    background-size: 10px 30px;
     border-radius: 20px;
     transition: background-color 0.1s ease-in;
 }
